@@ -6,7 +6,7 @@ const shopStockMovementSchema = mongoose.Schema(
     warehouse_movement: {
       type: mongoose.SchemaTypes.ObjectId,
       ref: 'WarehouseMovement',
-      required: true,
+      default: null,
     },
     stock_type: {
       type: String,
@@ -15,7 +15,7 @@ const shopStockMovementSchema = mongoose.Schema(
     user: {
       type: mongoose.SchemaTypes.ObjectId,
       ref: 'User',
-      required: true,
+      default: null,
     },
     shop: {
       type: mongoose.SchemaTypes.ObjectId,
@@ -29,11 +29,6 @@ const shopStockMovementSchema = mongoose.Schema(
     item: {
       type: mongoose.SchemaTypes.ObjectId,
       ref: 'Item',
-      required: true,
-    },
-    category: {
-      type: mongoose.SchemaTypes.ObjectId,
-      ref: 'Category',
       required: true,
     },
     stock_balance: {

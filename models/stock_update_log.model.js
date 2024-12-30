@@ -11,7 +11,7 @@ const stockUpdateLogSchema = mongoose.Schema(
     shop: {
       type: mongoose.SchemaTypes.ObjectId,
       ref: 'Shop',
-      required: true,
+      default: null,
     },
     old_stockin_qty: {
       type: Number,

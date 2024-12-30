@@ -3,6 +3,11 @@ const { toJSON, paginate } = require("./plugins");
 
 const warehouseMovementSchema = mongoose.Schema(
   {
+    shop_movement: {
+      type: mongoose.SchemaTypes.ObjectId,
+      ref: "ShopStockMovement",
+      default: null,
+    },
     stock_type: {
       type: String,
       enum: ["In", "Out"],

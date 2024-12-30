@@ -1,5 +1,15 @@
 const allRoles = {
-  warehouse_user: ["getUsers", "manageUsers"],
+  warehouse_user: [
+    "manageWarehouseStock",
+    "manageUsers",
+    "getUsers",
+    "manageShops",
+    "getShops",
+    "manageCategories",
+    "getCategories",
+    "manageItems",
+    "getItems",
+  ],
   admin: [
     "manageUsers",
     "getUsers",
@@ -10,7 +20,17 @@ const allRoles = {
     "manageItems",
     "getItems",
   ],
-  shop_user: ["getUsers", "manageUsers"],
+  shop_user: [
+    "manageShopStock",
+    "manageUsers",
+    "getUsers",
+    "manageShops",
+    "getShops",
+    "manageCategories",
+    "getCategories",
+    "manageItems",
+    "getItems",
+  ],
 };
 
 const roles = Object.keys(allRoles);

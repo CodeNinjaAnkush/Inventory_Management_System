@@ -4,6 +4,8 @@ const userRoute = require('./user.route');
 const shopRoute = require('./shop.route');
 const categoryRoute = require('./category.route');
 const itemRoute = require('./item.route');
+const warehouseMovementRoute = require('./warehouse_movement.route');
+const shopStockMovementRoute = require('./shop_stock_movement.route');
 const docsRoute = require('./docs.route');
 const config = require('../../config/config');
 
@@ -29,6 +31,14 @@ const defaultRoutes = [
   {
     path: '/items',
     route: itemRoute,
+  },
+  {
+    path: '/warehouse_movements',
+    route: warehouseMovementRoute,
+  },
+  {
+    path: '/shop_stock_movements',
+    route: shopStockMovementRoute,
   },
 ];
 
