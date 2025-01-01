@@ -19,6 +19,22 @@ router
     auth("manageShopStock"),
     validate(shopStockMovementValidation.acceptStockIn),
     shopStockMovementController.acceptStockIn
+);
+
+router
+  .route("/reject")
+  .post(
+    auth("manageShopStock"),
+    validate(shopStockMovementValidation.rejectStockIn),
+    shopStockMovementController.rejectStockIn
+);
+  
+router
+  .route("/out")
+  .post(
+    auth("manageShopStock"),
+    validate(shopStockMovementValidation.createStockOut),
+    shopStockMovementController.createStockOut
   );
 
 module.exports = router;

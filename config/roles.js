@@ -1,14 +1,10 @@
 const allRoles = {
   warehouse_user: [
     "manageWarehouseStock",
-    "manageUsers",
-    "getUsers",
-    "manageShops",
     "getShops",
-    "manageCategories",
     "getCategories",
-    "manageItems",
     "getItems",
+    "getAllStockBalance",
   ],
   admin: [
     "manageUsers",
@@ -22,14 +18,11 @@ const allRoles = {
   ],
   shop_user: [
     "manageShopStock",
-    "manageUsers",
     "getUsers",
-    "manageShops",
     "getShops",
-    "manageCategories",
     "getCategories",
-    "manageItems",
     "getItems",
+    "getAllStockBalance",
   ],
 };
 

@@ -6,6 +6,7 @@ const categoryRoute = require('./category.route');
 const itemRoute = require('./item.route');
 const warehouseMovementRoute = require('./warehouse_movement.route');
 const shopStockMovementRoute = require('./shop_stock_movement.route');
+const allStockBalanceRoute = require('./all_stock_balance.route');
 const docsRoute = require('./docs.route');
 const config = require('../../config/config');
 
@@ -39,6 +40,10 @@ const defaultRoutes = [
   {
     path: '/shop_stock_movements',
     route: shopStockMovementRoute,
+  },
+  {
+    path: '/all_stock_balances',
+    route: allStockBalanceRoute,
   },
 ];
 
